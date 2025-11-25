@@ -1,0 +1,37 @@
+[1.004s] Invoking command in '/home/ubuntu/slam_proj/msi/src/turtlebot4_depth': PYTHONPATH=/home/ubuntu/slam_proj/msi/build/turtlebot4_depth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot4_depth build --build-base /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build install --record /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/install.log --single-version-externally-managed install_data
+[1.189s] running egg_info
+[1.189s] creating ../../build/turtlebot4_depth/turtlebot4_depth.egg-info
+[1.189s] writing ../../build/turtlebot4_depth/turtlebot4_depth.egg-info/PKG-INFO
+[1.189s] writing dependency_links to ../../build/turtlebot4_depth/turtlebot4_depth.egg-info/dependency_links.txt
+[1.189s] writing entry points to ../../build/turtlebot4_depth/turtlebot4_depth.egg-info/entry_points.txt
+[1.189s] writing requirements to ../../build/turtlebot4_depth/turtlebot4_depth.egg-info/requires.txt
+[1.189s] writing top-level names to ../../build/turtlebot4_depth/turtlebot4_depth.egg-info/top_level.txt
+[1.190s] writing manifest file '../../build/turtlebot4_depth/turtlebot4_depth.egg-info/SOURCES.txt'
+[1.191s] reading manifest file '../../build/turtlebot4_depth/turtlebot4_depth.egg-info/SOURCES.txt'
+[1.191s] writing manifest file '../../build/turtlebot4_depth/turtlebot4_depth.egg-info/SOURCES.txt'
+[1.191s] running build
+[1.191s] running build_py
+[1.192s] creating /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build
+[1.192s] creating /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build/lib
+[1.192s] creating /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build/lib/turtlebot4_depth
+[1.192s] copying turtlebot4_depth/__init__.py -> /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build/lib/turtlebot4_depth
+[1.192s] copying turtlebot4_depth/depth_checker.py -> /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build/lib/turtlebot4_depth
+[1.192s] running install
+[1.192s] running install_lib
+[1.193s] creating /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages/turtlebot4_depth
+[1.193s] copying /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build/lib/turtlebot4_depth/__init__.py -> /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages/turtlebot4_depth
+[1.193s] copying /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build/lib/turtlebot4_depth/depth_checker.py -> /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages/turtlebot4_depth
+[1.193s] byte-compiling /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages/turtlebot4_depth/__init__.py to __init__.cpython-310.pyc
+[1.193s] byte-compiling /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages/turtlebot4_depth/depth_checker.py to depth_checker.cpython-310.pyc
+[1.194s] running install_data
+[1.194s] creating /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/share/ament_index
+[1.194s] creating /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/share/ament_index/resource_index
+[1.194s] creating /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/share/ament_index/resource_index/packages
+[1.194s] copying resource/turtlebot4_depth -> /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/share/ament_index/resource_index/packages
+[1.194s] copying package.xml -> /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/share/turtlebot4_depth
+[1.194s] running install_egg_info
+[1.196s] Copying ../../build/turtlebot4_depth/turtlebot4_depth.egg-info to /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages/turtlebot4_depth-0.0.0-py3.10.egg-info
+[1.197s] running install_scripts
+[1.212s] Installing depth_checker script to /home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/turtlebot4_depth
+[1.213s] writing list of installed files to '/home/ubuntu/slam_proj/msi/build/turtlebot4_depth/install.log'
+[1.244s] Invoked command in '/home/ubuntu/slam_proj/msi/src/turtlebot4_depth' returned '0': PYTHONPATH=/home/ubuntu/slam_proj/msi/build/turtlebot4_depth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/slam_proj/msi/install/turtlebot4_depth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtlebot4_depth build --build-base /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/build install --record /home/ubuntu/slam_proj/msi/build/turtlebot4_depth/install.log --single-version-externally-managed install_data

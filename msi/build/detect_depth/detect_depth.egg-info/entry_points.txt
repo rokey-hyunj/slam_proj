@@ -1,0 +1,3 @@
+[console_scripts]
+yolo_depth = detect_depth.yolo_depth:main
+

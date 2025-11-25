@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/detect_depth/detect_depth.egg-info
+writing ../../build/detect_depth/detect_depth.egg-info/PKG-INFO
+writing dependency_links to ../../build/detect_depth/detect_depth.egg-info/dependency_links.txt
+writing entry points to ../../build/detect_depth/detect_depth.egg-info/entry_points.txt
+writing requirements to ../../build/detect_depth/detect_depth.egg-info/requires.txt
+writing top-level names to ../../build/detect_depth/detect_depth.egg-info/top_level.txt
+writing manifest file '../../build/detect_depth/detect_depth.egg-info/SOURCES.txt'
+reading manifest file '../../build/detect_depth/detect_depth.egg-info/SOURCES.txt'
+writing manifest file '../../build/detect_depth/detect_depth.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/slam_proj/msi/build/detect_depth/build
+creating /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib
+creating /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth
+copying detect_depth/__init__.py -> /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth
+copying detect_depth/yolo_depth.py -> /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth
+running install
+running install_lib
+creating /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth
+copying /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth/__init__.py -> /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth
+copying /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth/yolo_depth.py -> /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth
+byte-compiling /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth/yolo_depth.py to yolo_depth.cpython-310.pyc
+running install_data
+creating /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index
+creating /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index/resource_index
+creating /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index/resource_index/packages
+copying resource/detect_depth -> /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/slam_proj/msi/install/detect_depth/share/detect_depth
+running install_egg_info
+Copying ../../build/detect_depth/detect_depth.egg-info to /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth-0.0.0-py3.10.egg-info
+running install_scripts
+Installing yolo_depth script to /home/ubuntu/slam_proj/msi/install/detect_depth/lib/detect_depth
+writing list of installed files to '/home/ubuntu/slam_proj/msi/build/detect_depth/install.log'

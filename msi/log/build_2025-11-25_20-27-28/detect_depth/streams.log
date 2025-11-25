@@ -1,0 +1,37 @@
+[1.026s] Invoking command in '/home/ubuntu/slam_proj/msi/src/detect_depth': PYTHONPATH=/home/ubuntu/slam_proj/msi/build/detect_depth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/detect_depth build --build-base /home/ubuntu/slam_proj/msi/build/detect_depth/build install --record /home/ubuntu/slam_proj/msi/build/detect_depth/install.log --single-version-externally-managed install_data
+[1.222s] running egg_info
+[1.222s] creating ../../build/detect_depth/detect_depth.egg-info
+[1.223s] writing ../../build/detect_depth/detect_depth.egg-info/PKG-INFO
+[1.223s] writing dependency_links to ../../build/detect_depth/detect_depth.egg-info/dependency_links.txt
+[1.223s] writing entry points to ../../build/detect_depth/detect_depth.egg-info/entry_points.txt
+[1.223s] writing requirements to ../../build/detect_depth/detect_depth.egg-info/requires.txt
+[1.223s] writing top-level names to ../../build/detect_depth/detect_depth.egg-info/top_level.txt
+[1.224s] writing manifest file '../../build/detect_depth/detect_depth.egg-info/SOURCES.txt'
+[1.225s] reading manifest file '../../build/detect_depth/detect_depth.egg-info/SOURCES.txt'
+[1.226s] writing manifest file '../../build/detect_depth/detect_depth.egg-info/SOURCES.txt'
+[1.226s] running build
+[1.226s] running build_py
+[1.226s] creating /home/ubuntu/slam_proj/msi/build/detect_depth/build
+[1.227s] creating /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib
+[1.227s] creating /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth
+[1.227s] copying detect_depth/__init__.py -> /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth
+[1.227s] copying detect_depth/yolo_depth.py -> /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth
+[1.228s] running install
+[1.229s] running install_lib
+[1.230s] creating /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth
+[1.230s] copying /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth/__init__.py -> /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth
+[1.231s] copying /home/ubuntu/slam_proj/msi/build/detect_depth/build/lib/detect_depth/yolo_depth.py -> /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth
+[1.231s] byte-compiling /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth/__init__.py to __init__.cpython-310.pyc
+[1.231s] byte-compiling /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth/yolo_depth.py to yolo_depth.cpython-310.pyc
+[1.233s] running install_data
+[1.233s] creating /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index
+[1.233s] creating /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index/resource_index
+[1.233s] creating /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index/resource_index/packages
+[1.233s] copying resource/detect_depth -> /home/ubuntu/slam_proj/msi/install/detect_depth/share/ament_index/resource_index/packages
+[1.233s] copying package.xml -> /home/ubuntu/slam_proj/msi/install/detect_depth/share/detect_depth
+[1.234s] running install_egg_info
+[1.235s] Copying ../../build/detect_depth/detect_depth.egg-info to /home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages/detect_depth-0.0.0-py3.10.egg-info
+[1.236s] running install_scripts
+[1.252s] Installing yolo_depth script to /home/ubuntu/slam_proj/msi/install/detect_depth/lib/detect_depth
+[1.252s] writing list of installed files to '/home/ubuntu/slam_proj/msi/build/detect_depth/install.log'
+[1.272s] Invoked command in '/home/ubuntu/slam_proj/msi/src/detect_depth' returned '0': PYTHONPATH=/home/ubuntu/slam_proj/msi/build/detect_depth/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/slam_proj/msi/install/detect_depth/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/detect_depth build --build-base /home/ubuntu/slam_proj/msi/build/detect_depth/build install --record /home/ubuntu/slam_proj/msi/build/detect_depth/install.log --single-version-externally-managed install_data
