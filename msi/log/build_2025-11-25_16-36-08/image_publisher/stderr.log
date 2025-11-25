@@ -1,0 +1,2 @@
+/home/ubuntu/slam_proj/msi/install/image_publisher/lib/python3.10/site-packages/image_publisher/camera_publisher.py:15: SyntaxWarning: 'NoneType' object is not callable; perhaps you missed a comma?
+  if self.pub_img is None():

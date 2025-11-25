@@ -1,0 +1,37 @@
+[0.613s] Invoking command in '/home/ubuntu/slam_proj/msi/src/image_subscriber': PYTHONPATH=/home/ubuntu/slam_proj/msi/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/image_subscriber build --build-base /home/ubuntu/slam_proj/msi/build/image_subscriber/build install --record /home/ubuntu/slam_proj/msi/build/image_subscriber/install.log --single-version-externally-managed install_data
+[0.782s] running egg_info
+[0.783s] creating ../../build/image_subscriber/image_subscriber.egg-info
+[0.784s] writing ../../build/image_subscriber/image_subscriber.egg-info/PKG-INFO
+[0.784s] writing dependency_links to ../../build/image_subscriber/image_subscriber.egg-info/dependency_links.txt
+[0.784s] writing entry points to ../../build/image_subscriber/image_subscriber.egg-info/entry_points.txt
+[0.784s] writing requirements to ../../build/image_subscriber/image_subscriber.egg-info/requires.txt
+[0.784s] writing top-level names to ../../build/image_subscriber/image_subscriber.egg-info/top_level.txt
+[0.784s] writing manifest file '../../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[0.785s] reading manifest file '../../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[0.785s] writing manifest file '../../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[0.785s] running build
+[0.785s] running build_py
+[0.785s] creating /home/ubuntu/slam_proj/msi/build/image_subscriber/build
+[0.785s] creating /home/ubuntu/slam_proj/msi/build/image_subscriber/build/lib
+[0.785s] creating /home/ubuntu/slam_proj/msi/build/image_subscriber/build/lib/image_subscriber
+[0.785s] copying image_subscriber/__init__.py -> /home/ubuntu/slam_proj/msi/build/image_subscriber/build/lib/image_subscriber
+[0.785s] copying image_subscriber/camera_subscriber.py -> /home/ubuntu/slam_proj/msi/build/image_subscriber/build/lib/image_subscriber
+[0.787s] running install
+[0.787s] running install_lib
+[0.787s] creating /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages/image_subscriber
+[0.787s] copying /home/ubuntu/slam_proj/msi/build/image_subscriber/build/lib/image_subscriber/__init__.py -> /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages/image_subscriber
+[0.787s] copying /home/ubuntu/slam_proj/msi/build/image_subscriber/build/lib/image_subscriber/camera_subscriber.py -> /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages/image_subscriber
+[0.787s] byte-compiling /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages/image_subscriber/__init__.py to __init__.cpython-310.pyc
+[0.787s] byte-compiling /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages/image_subscriber/camera_subscriber.py to camera_subscriber.cpython-310.pyc
+[0.787s] running install_data
+[0.787s] creating /home/ubuntu/slam_proj/msi/install/image_subscriber/share/ament_index
+[0.787s] creating /home/ubuntu/slam_proj/msi/install/image_subscriber/share/ament_index/resource_index
+[0.787s] creating /home/ubuntu/slam_proj/msi/install/image_subscriber/share/ament_index/resource_index/packages
+[0.788s] copying resource/image_subscriber -> /home/ubuntu/slam_proj/msi/install/image_subscriber/share/ament_index/resource_index/packages
+[0.788s] copying package.xml -> /home/ubuntu/slam_proj/msi/install/image_subscriber/share/image_subscriber
+[0.788s] running install_egg_info
+[0.788s] Copying ../../build/image_subscriber/image_subscriber.egg-info to /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info
+[0.789s] running install_scripts
+[0.802s] Installing camera_subscriber script to /home/ubuntu/slam_proj/msi/install/image_subscriber/lib/image_subscriber
+[0.802s] writing list of installed files to '/home/ubuntu/slam_proj/msi/build/image_subscriber/install.log'
+[0.831s] Invoked command in '/home/ubuntu/slam_proj/msi/src/image_subscriber' returned '0': PYTHONPATH=/home/ubuntu/slam_proj/msi/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/slam_proj/msi/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/image_subscriber build --build-base /home/ubuntu/slam_proj/msi/build/image_subscriber/build install --record /home/ubuntu/slam_proj/msi/build/image_subscriber/install.log --single-version-externally-managed install_data

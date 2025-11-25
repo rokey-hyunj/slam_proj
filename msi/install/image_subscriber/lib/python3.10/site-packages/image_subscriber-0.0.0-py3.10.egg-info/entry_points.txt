@@ -1,0 +1,3 @@
+[console_scripts]
+camera_subscriber = image_subscriber.camera_subscriber:main
+
