@@ -46,56 +46,56 @@ class YoloInferenceNode(Node):
         """
         try:
             # 1. ROS Image -> OpenCV Image (NumPy Array) 변환
+            # cv_image는 이후 추론과 드로잉에 사용됩니다.
             cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         except Exception as e:
             self.get_logger().error(f'cv_bridge 변환 실패: {e}')
             return
 
         # 2. YOLO 추론 수행
-        # verbose=False로 설정하여 콘솔 출력을 줄입니다.
         results = self.model.predict(cv_image, verbose=False)
         
-        # 3. 추론 결과 처리 및 메시지 생성
         detection_summary = []
         
-        # Ultralytics results 객체에서 탐지된 객체 정보 추출
+        # 3. 추론 결과 처리 및 이미지에 바운딩 박스 그리기
         for r in results:
+            # 바운딩 박스 정보를 직접 시각화에 사용
             for box in r.boxes:
                 # 바운딩 박스 좌표 (xyxy 형식)
                 x1, y1, x2, y2 = [int(val) for val in box.xyxy[0].tolist()]
-                
-                # 신뢰도(confidence) 및 클래스 이름
                 conf = round(box.conf[0].item(), 2)
                 cls_id = int(box.cls[0].item())
                 cls_name = self.model.names[cls_id]
                 
-                detection_summary.append(f'{cls_name} ({conf}) at [{x1},{y1},{x2},{y2}]')
-                
-                # 디버깅을 위해 OpenCV 이미지에 바운딩 박스를 그릴 수도 있습니다.
-                cv2.rectangle(cv_image, (x1, y1), (x2, y2), (0, 255, 0), 2)
+                detection_summary.append(f'{cls_name} ({conf})')
+
+                # 🖍️ OpenCV를 사용하여 이미지에 바운딩 박스 그리기
+                color = (0, 255, 0) # 초록색
+                cv2.rectangle(cv_image, (x1, y1), (x2, y2), color, 2)
                 cv2.putText(cv_image, f'{cls_name} {conf}', (x1, y1 - 10), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-
-
-        # 4. 추론 결과 ROS 토픽 발행
-        result_msg = String()
-        if detection_summary:
-            # 탐지된 객체가 있을 경우, 요약 정보를 String 메시지에 담아 발행
-            result_msg.data = "Detected: " + " | ".join(detection_summary)
-        else:
-            result_msg.data = "No objects detected."
-            
-        self.publisher_.publish(result_msg)
-        self.get_logger().info(f'결과 발행: "{result_msg.data}"')
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2, cv2.LINE_AA)
         
-        # 5. 시각화 이미지를 발행하고 싶다면 이 주석을 해제하세요.
-        # try:
-        #     # 시각화된 OpenCV 이미지를 ROS Image 메시지로 변환
-        #     annotated_img_msg = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
-        #     annotated_img_msg.header = msg.header # 타임스탬프와 프레임 ID 유지
-        #     self.image_publisher.publish(annotated_img_msg)
-        # except Exception as e:
-        #     self.get_logger().error(f'이미지 발행 실패: {e}')
+        
+        # 4. (선택 사항) 텍스트 결과 ROS 토픽 발행
+        result_msg = String()
+        result_msg.data = "Detected: " + " | ".join(detection_summary) if detection_summary else "No objects detected."
+        self.publisher_.publish(result_msg)
+        
+        
+        # 5. 🖼️ 시각화된 이미지 ROS 토픽 발행 (핵심!)
+        try:
+            # 시각화된 OpenCV 이미지를 ROS Image 메시지로 변환
+            annotated_img_msg = self.bridge.cv2_to_imgmsg(cv_image, "bgr8")
+            
+            # 원본 메시지의 헤더(타임스탬프, 프레임 ID)를 복사하여 시간 동기화 유지
+            annotated_img_msg.header = msg.header 
+            
+            # 발행
+            self.image_publisher.publish(annotated_img_msg)
+            self.get_logger().info(f'시각화 이미지 발행 완료. (탐지 개수: {len(detection_summary)})')
+            
+        except Exception as e:
+            self.get_logger().error(f'이미지 발행 실패: {e}')
 
 
 def main(args=None):
