@@ -1,3 +1,0 @@
-[console_scripts]
-camera_publisher = image_publisher.camera_publisher:main
-
